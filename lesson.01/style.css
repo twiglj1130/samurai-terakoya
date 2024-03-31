@@ -1,0 +1,272 @@
+/* 画面幅が768px以上のとき */
+@media screen and (min-width: 768px) {
+
+
+html {
+    background-color: #fff;
+}
+
+/* bodyのフォント設定 */
+body {
+    font-size: 18px;
+    font-family: "Noto Sans JP"
+}
+
+/* ヘッダーの設定 */
+nav {
+    color: #000;
+    font-size: 34px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 20px 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #000;
+}
+
+a:active {
+    color: #000;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:link {
+    color: #000;
+}
+
+.header-left {
+    border: 2px solid black;
+    padding: 0 20px;
+}
+
+.header-right {
+    padding: 0 20px 0 20px;
+}
+
+.canon-image {
+    width: 100%;
+}
+
+
+/* About内の設定 */
+.center {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.side-by-side {
+    display: flex;
+    justify-content: center;
+}
+
+.posision {
+    position: relative;
+}
+
+.circle-man {
+    border-radius: 50%;
+    border: gray;
+    margin-right: 80px;
+}
+
+.profile {
+    margin-left: 80px;
+}
+
+.outer-circle {
+    width: 7.6cm;
+    height: 7.6cm;
+    border: 2px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: -4px;
+}
+
+
+/* Works内レイアウト */
+.side-by-side2 {
+    width: 900px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#works {
+    margin-bottom: 100px;
+}
+
+
+.works-img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.works-text {
+    max-width: 100%;
+}
+
+.works-parts {
+    width: 30%;
+    height: auto;
+    margin: 20px;
+}
+
+/* footer設定 */
+footer {
+    text-align: center;
+}
+    
+}      /* ここまでがPC用のスタイル */
+
+
+
+
+/*================
+  スマホ用のスタイル
+  =================*/
+@media screen and (max-width: 767px) {
+
+
+    html {
+        background-color: #fff;
+    }
+    
+    /* bodyのフォント設定 */
+    body {
+        font-size: 18px;
+        font-family: "Noto Sans JP"
+    }
+    
+    /* ヘッダーの設定 */
+    nav {
+        color: #000;
+        font-size: 34px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 0 20px 0;
+    }
+    
+    a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    a:hover {
+        color: #000;
+    }
+    
+    a:active {
+        color: #000;
+    }
+    
+    a:visited {
+        color: #000;
+    }
+    
+    a:link {
+        color: #000;
+    }
+    
+    .header-left {
+        border: 2px solid black;
+    }
+    
+    .header-right {
+        padding: 0 20px 0 20px;
+    }
+    
+    .canon-image {
+        width: 100%;
+    }
+
+    /* About内の設定 */
+    .center {
+        text-align: center;
+        font-weight: bold;
+        font-size: 34px;
+    }
+
+    .name {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+/*     
+    .side-by-side {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .circle-man {
+        border-radius: 50%;
+        border: gray;
+    }
+
+    .posision {
+        display: flex;
+        justify-content: center;
+    }
+
+    .profile {
+        width: 400px;
+        max-width: 100%;
+        margin: auto;
+    }
+
+
+
+    /* Works内レイアウト */
+    .side-by-side2 {
+       width: 900px;
+       max-width: 100%;
+       /* display: flex; */
+       /* justify-content: center; */
+       margin: auto;
+    }
+
+
+    .works-img {
+       max-width: 100%;
+       /* width: 100%; */
+    }
+
+    .works-text {
+       max-width: 100%;
+    }
+
+    .works-parts {
+       width: 300px;
+       height: auto;
+       margin: auto;
+    }
+
+    /* footer設定 */
+    footer {
+       display: flex;
+       justify-content: space-around;
+    }
+    
+    
+}/* ここまでがスマホ用のスタイル */
+
+
+
+/*  写真の外枠線はあきらめた */
+/* １回目　制作時間6時間 */
