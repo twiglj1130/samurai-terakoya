@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+}
+body {
+    color: black;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+
+img {
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.left-nav {
+    border: 1px solid black;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    max-width: 900px;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 200px;
+    object-fit: cover;
+    border: 2px solid gray;
+    padding: 2px;
+}
+
+.profile {
+    padding-left: 20px;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+.item {
+    width: 30%;
+}
+
+.item-center {
+    padding: 0 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+
+/* 画面幅が767px以下のとき */
+/* スマートフォン用のスタイルを指定する */
+@media screen and (max-width: 767px) {
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    .item {
+        width: 80%;
+    }
+  }
