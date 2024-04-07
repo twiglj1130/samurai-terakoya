@@ -9,6 +9,7 @@ const typedfield = document.getElementById('typed');
 const wrap = document.getElementById('wrap');
 const start = document.getElementById('start');
 const count = document.getElementById('count');
+const aaa = document.getElementById('aaa');
 
 // 複数のテキストを格納する配列
 const textList = [
@@ -99,15 +100,17 @@ const rankCheck = score => {
 // ゲームを終了
 const gameOver = id => {
     clearInterval(id);
-
+    // aaa.textContent = 'タイムアップ！';
+    
     // console.log('ゲーム終了!');
     const result = confirm(rankCheck(score));
+
 
     // OKボタンをクリックされたらリロードする
     if(result == true) {
         window.location.reload();
     }
-};
+};    // wrap.textContent = 'タイムアップ！';
 
 // カウントダウンタイマー
 const timer = () => {
@@ -120,20 +123,29 @@ const timer = () => {
         // カウントダウンする
         time--;
         count.textContent = time;
+        console.log(time);
 
         // カウントが0になったらタイマーを停止する
         if(time <= 0) {
+
             wrap.textContent = 'タイムアップ！';
 
-            // setTimeoutで少しの時間（10ミリ秒）経過後にgameOver(id);処理
-            setInterval(() => {
+            // // setTimeoutで少しの時間（10ミリ秒）経過後にgameOver(id);処理
+            setTimeout(() => {
                 gameOver(id);
             }, 10);
-            // 終了後ポップアップが消えないバグ
-            return;
+            // // 終了後ポップアップが消えないバグ
+            // return;
         }
     }, 1000);
 };
+
+
+            // document.typed.remove();
+            // document.untyped.remove();
+            // untypedfield = '';
+            // typedfield = '';
+
 
 // キーボードのイベント処理 ゲームスタート時の処理に移動
 // document.addEventListener('keypress', keyPress);
