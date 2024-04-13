@@ -16,12 +16,12 @@ $(document).on('scroll', function() {
 
     if (scrollTop > 150) {
         // フェードインする
-        $('.circle').fadeIn(500);
+        $('.circle').fadeIn(1000);
     }
 
     if (scrollTop > 650) {
         // フェードインする
-        $('.scroll').fadeIn(500);
+        $('.scroll').fadeIn(1000);
     }
 });
 
