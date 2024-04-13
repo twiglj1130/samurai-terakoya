@@ -14,7 +14,7 @@ $(document).on('scroll', function() {
     // スクロール位置を取得
     const scrollTop = $(window).scrollTop();
 
-    if (scrollTop > 30) {
+    if (scrollTop > 150) {
         // フェードインする
         $('.circle').fadeIn(500);
     }
@@ -30,7 +30,7 @@ $(document).on('scroll', function() {
     // スクロール位置を取得
     const scrollTop = $(window).scrollTop();
 
-    if (scrollTop > 50) {
+    if (scrollTop > 180) {
         // フェードインする
         $('.fade').fadeIn(500);
     }
