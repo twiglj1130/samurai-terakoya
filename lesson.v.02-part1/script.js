@@ -9,19 +9,23 @@ $('.carousel').slick({
     speed: 1500,//fadeのスピード設定
 });
 
+$(document).ready(function () {
+    $('#fade-in, .works').hide();
+});
+
 // manフェードイン
 $(document).on('scroll', function() {
     // スクロール位置を取得
     const scrollTop = $(window).scrollTop();
 
-    if (scrollTop > 150) {
+    if (scrollTop > 300) {
         // フェードインする
-        $('.circle').fadeIn(1000);
+        $('#fade-in').fadeIn(1000);
     }
 
-    if (scrollTop > 650) {
+    if (scrollTop > 850) {
         // フェードインする
-        $('.scroll').fadeIn(1000);
+        $('.works').fadeIn(1000);
     }
 });
 
@@ -30,7 +34,7 @@ $(document).on('scroll', function() {
     // スクロール位置を取得
     const scrollTop = $(window).scrollTop();
 
-    if (scrollTop > 180) {
+    if (scrollTop > 350) {
         // フェードインする
         $('.fade').fadeIn(500);
     }

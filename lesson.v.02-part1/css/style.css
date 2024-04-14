@@ -61,16 +61,26 @@ a:visited {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: 40px auto 80px auto;
+    margin: 160px auto 80px auto;
 }
 
 .circle {
+    /* display: none; */
     width: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid gray;
     padding: 3px;
-    display: none;
+}
+
+#fade-in {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px auto 80px auto;
+    /* display: none; */
 }
 
 .top {
@@ -128,6 +138,7 @@ a:visited {
 }
 
 .works {
+    display: none;
     max-width: 960px;
     margin: auto;
     display: flex;
@@ -146,12 +157,9 @@ a:visited {
     padding-left: 20px;
 }
 
-.scroll {
-    display: none;
-}
-
 footer {
     text-align: center;
+    margin-top: 150px;
 }
 
 /* 画面幅が767px以下のとき */
