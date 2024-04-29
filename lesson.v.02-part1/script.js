@@ -9,25 +9,37 @@ $('.carousel').slick({
     speed: 1500,//fadeのスピード設定
 });
 
-$(document).ready(function () {
-    $('#fade-in, .works').hide();
-});
+// $(document).ready(function () {
+//     $('#fade-in, .works').hide();
+// });
 
-// manフェードイン
-$(document).on('scroll', function() {
-    // スクロール位置を取得
-    const scrollTop = $(window).scrollTop();
+// // manフェードイン
+// $(document).on('scroll', function() {
+//     // スクロール位置を取得
+//     const scrollTop = $(window).scrollTop();
 
-    if (scrollTop > 300) {
-        // フェードインする
-        $('#fade-in').fadeIn(1000);
-    }
+//     if (scrollTop > 300) {
+//         // フェードインする
+//         $('#fade-in').fadeIn(1000);
+//     }
 
-    if (scrollTop > 850) {
-        // フェードインする
-        $('.works').fadeIn(1000);
-    }
-});
+//     if (scrollTop > 850) {
+//         // フェードインする
+//         $('.works').fadeIn(1000);
+//     }
+// });
+
+  // スクロールしたときにセクションをフェードインさせる
+  $(window).scroll(function () {
+    const scrollAmount = $(window).scrollTop();
+    const windowHeight = $(window).height();
+    $('section').each(function () {
+      const position = $(this).offset().top;
+      if (scrollAmount > position - windowHeight + 100) {
+        $(this).addClass('fade-in');
+      }
+    });
+  });
 
 // Topフェードイン,アウト
 $(document).on('scroll', function() {
